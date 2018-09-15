@@ -5,13 +5,26 @@
       </header>
    
       <ul>
-        {{#each tasks}}
-          {{> task}}
-        {{/each}}
+        <form>
+            
+        </form>
+        <table>
+            <tr class=header>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+            </tr>
+            <tr class=user-input>
+                <td>Johm</td>
+                <td>Faderr</td>
+                <td>M</td>
+                <td>20-01-1989</td>
+            </tr>
+        </table>
+
       </ul>
     </div>
   </body>
-   
-  <template name="task">
-    <li>{{text}}</li>
-  </template>
+  
