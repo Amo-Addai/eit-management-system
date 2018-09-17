@@ -9,6 +9,7 @@ import { EITs} from '../api/eits.js';
 Template.body.onCreated(function bodyOnCreated() {
     this.state = new ReactiveDict();
     this.state.set('theArray', []);
+    Meteor.subscribe('eits');
 });
 
 Template.body.events({
@@ -37,7 +38,7 @@ Template.body.events({
     'click .delete' (event, instance) {
         var getAll = instance.state.get('theArray')
         getAll.forEach(function(id){
-            EITs.remove(id)
+            Meteor.call('eits.remove', id);
         })
     },
 });

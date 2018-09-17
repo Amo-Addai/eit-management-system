@@ -98,7 +98,31 @@ input[type="date"]{
 label {
   font: 20px;
 }
-a {
-  width: 40px;
+.login-link-text {
+  width: 10vw;
   font-family: 'Ropa Sans', sans-serif;
+  padding: 0% 15%;
+  text-transform: uppercase;
+}
+.login-link-and-dropdown-list{
+  width: 10vw;
+  font-family: 'Ropa Sans', sans-serif;
+  padding: 10% 0% 5%
+}
+#login-buttons .login-button, .accounts-dialog .login-button {
+  background: #315481;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 16px;
+}
+#login-password-label{
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 14px;
+}
+#login-username-label {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 14px;
+}
+#signup-link {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 14px;
 }

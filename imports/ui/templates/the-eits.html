@@ -1,12 +1,18 @@
 <template name="eit">
     <span class="text"><strong>{{username}}</strong>{{text}}</span>
     <tr id="user-input" class="{{#if checked}}checked{{/if}}">
-        <td class="checks"><input type="checkbox" checked="{{checked}}" class="toggle-checked" /></td>
+        {{#if isOwner}}    
+            <td class="checks"><input type="checkbox" checked="{{checked}}" class="toggle-checked" /></td>
+        {{else}}
+            <td></td>
+        {{/if}}
         <td class="values fname">{{firstname}}</td>
         <td class="values lname">{{lastname}}</td>
         <td class="values GendeR">{{gender}}</td>
         <td class="values dateOB">{{dob}}</td>
-        <td class="button"><button class="edit" id="{{_id}}">Edit</button></td>
+        {{#if isOwner}}
+            <td class="button"><button class="edit" id="{{_id}}">Edit</button></td>
+        {{/if}}
     </tr>
 </template>
 

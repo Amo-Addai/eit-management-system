@@ -4,6 +4,12 @@ import { Meteor } from 'meteor/meteor';
  
 import './the-eits.html';
 
+Template.eit.helpers({
+    isOwner() {
+      return this.owner === Meteor.userId();
+    },
+});  
+
 Template.body.events({
     'submit .new-eit'(event) {
       // Prevent default browser form submit
@@ -18,13 +24,7 @@ Template.body.events({
       const dob = target.dob.value;
    
       // Insert a task into the collection
-      EITs.insert({
-        firstname: firstname,
-        lastname: lastname,
-        gender: gender,
-        dob: dob,
-        owner: Meteor.userId(),
-      });
+      Meteor.call('eits.insert', firstname, lastname, gender, dob);
 
       // Clear form
       target.reset();
@@ -40,13 +40,7 @@ Template.body.events({
         const dob = target.dob.value;
         const id = target.id.value;
 
-        EITs.update(id, {$set: {
-            firstname: firstname,
-            lastname: lastname,
-            gender: gender,
-            dob: dob,
-            }
-        });
+        Meteor.call('eits.update', id, firstname, lastname, gender, dob)
 
         target.reset();
         document.getElementById('new-eit').style.display='block';
