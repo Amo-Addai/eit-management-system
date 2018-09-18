@@ -27,15 +27,15 @@ h1 {
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
-  padding: 5% 16% 0%;
+  padding: 5% 18% 0%;
   font-family: 'Ropa Sans', sans-serif;
 }
-h3 {
-  font-size: 1.3em;
+h2 {
+  font-size: 1.5em;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
-  padding: 0% 40% 0%;
+  padding: 0% 41%;
   font-family: 'Ropa Sans', sans-serif;
 }
 .user {
@@ -107,7 +107,7 @@ label {
 .login-link-and-dropdown-list{
   width: 10vw;
   font-family: 'Ropa Sans', sans-serif;
-  padding: 10% 0% 5%
+  padding: 10% 0% 5%;
 }
 #login-buttons .login-button, .accounts-dialog .login-button {
   background: #315481;
@@ -125,4 +125,10 @@ label {
 #signup-link {
   font-family: 'Ropa Sans', sans-serif;
   font-size: 14px;
+}
+.message {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5% 32%;
 }
