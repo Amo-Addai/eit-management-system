@@ -1,5 +1,5 @@
 body {
-  background-color: #94618E;
+  background-color: lightblue;
   background-attachment: fixed;
  
   position: absolute;
@@ -18,25 +18,21 @@ body {
   background: white;
 }
 header {
-  background: #f4decb;
+  background: deepskyblue;
   padding: 20px 15px 15px 15px;
   position: relative;
 }
 h1 {
   font-size: 1.8em;
-  margin: 0;
-  margin-bottom: 10px;
+  text-align: center;
   display: inline-block;
-  padding: 5% 18% 0%;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
 }
 h2 {
   font-size: 1.5em;
-  margin: 0;
-  margin-bottom: 10px;
+  text-align: center;
   display: inline-block;
-  padding: 0% 41%;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
 }
 .user {
   background: #315481;
@@ -65,7 +61,7 @@ table {
   vertical-align: inherit;
   font-weight: bold;
   text-align: center;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
 }
 .values {
   display: table-cell;
@@ -74,9 +70,9 @@ table {
   font-family: 'Roboto', sans-serif;
 }
 form {
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   padding: 2% 5%;
-  background: #f8eee7;
+  background: lightseagreen;
 }
 .checks {
   padding: 0% 3%;
@@ -100,34 +96,34 @@ label {
 }
 .login-link-text {
   width: 10vw;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   padding: 0% 15%;
   text-transform: uppercase;
 }
 .login-link-and-dropdown-list{
   width: 10vw;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   padding: 10% 0% 5%;
 }
 #login-buttons .login-button, .accounts-dialog .login-button {
   background: #315481;
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   font-size: 16px;
 }
 #login-password-label{
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   font-size: 14px;
 }
 #login-username-label {
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   font-size: 14px;
 }
 #signup-link {
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   font-size: 14px;
 }
 .message {
-  font-family: 'Ropa Sans', sans-serif;
+  font-family: sans-serif, 'Ropa Sans';
   font-size: 25px;
   font-weight: bold;
   padding: 5% 32%;

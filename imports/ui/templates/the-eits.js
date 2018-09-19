@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
-import { EITs} from '../../api/eits.js';
 import { Meteor } from 'meteor/meteor';
- 
+
+import { EITs} from '../../api/eits.js';
 import './the-eits.html';
 
 Template.eit.helpers({
@@ -11,6 +11,7 @@ Template.eit.helpers({
 });  
 
 Template.body.events({
+
     'submit .new-eit'(event) {
       // Prevent default browser form submit
       event.preventDefault();

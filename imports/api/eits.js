@@ -6,7 +6,7 @@ export const EITs = new Mongo.Collection('eits');
 
 if (Meteor.isServer) {
     // This code only runs on the server
-    Meteor.publish('eits', function tasksPublication() {
+    Meteor.publish('eits', function publication() {
       return EITs.find();
     });
 }  
@@ -19,7 +19,7 @@ Meteor.methods({
       check(dob, String);
    
       // Make sure the user is logged in before inserting a task
-      if (! Meteor.userId()) {
+      if (!Meteor.userId()) {
         throw new Meteor.Error('not-authorized');
       }
    
@@ -31,12 +31,11 @@ Meteor.methods({
         owner: Meteor.userId(),
       });
     },
-    'eits.remove'(eitId) {
-      check(eitId, String);
-   
-      EITs.remove(eitId);
+    'eits.remove'(id) {
+      check(id, String);
+      EITs.remove(id);
     },
-    'eits.update'(eitsId, firstname, lastname, gender, dob) {
-      EITs.update(eitsId, { $set: { firstname:firstname, lastname:lastname, gender:gender, dob:dob} });
+    'eits.update'(id, firstname, lastname, gender, dob) {
+      EITs.update(id, { $set: { firstname:firstname, lastname:lastname, gender:gender, dob:dob } });
     },
   });

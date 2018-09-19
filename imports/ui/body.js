@@ -1,9 +1,8 @@
-import './body.html';
 import { ReactiveDict } from 'meteor/reactive-dict';
 
+import './body.html';
 import './templates/eits-list.js';
 import './templates/the-eits.js';
-
 import { EITs} from '../api/eits.js';
 
 Template.body.onCreated(function bodyOnCreated() {
